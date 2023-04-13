@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "br_omega";
+    src: url("./font/br_omega-medium-webfont.woff");
+}
+
+body {
+    font-family: "br_omega", sans-serif;
+    color: #ffffff;
+    background: linear-gradient(to left, #9d33f3, #8d33f3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.glass-rect {
+    display: block;
+    max-width: 80vw;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    padding: 50px;
+    border: 1px solid rgb(235, 233, 233);
+    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.53) -1.83%, rgba(255, 255, 255, 0) 109.95%);
+    box-shadow: 50px 60px 100px rgba(0, 0, 0, 0.05);
+    /* backdrop-filter: blur(70px); */
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.nav-brand {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+ul.nav-items {
+    margin: 0;
+    float: right;
+    display: flex;
+    list-style-type: none;
+}
+
+li.nav-item {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.main {
+    margin-top: 15vh;
+    font-weight: normal;
+    display: inline-block;
+    padding: 20px;
+}
+
+.main-title {
+    font-size: 35px;
+}
+
+.main-desc {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.btn-boost {
+    margin-top: 10px;
+    border: 0;
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+    color: #ffffff;
+    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.53) -1.83%, rgba(255, 255, 255, 0) 109.95%);
+    box-shadow: 50px 60px 100px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    font-family: "br_omega", sans-serif;
+    border: 1px solid rgb(235, 233, 233);
+    cursor: pointer;
+}
+
+.img-wrapper {
+    display: flex;
+    float: right;
+    margin-top: 5vh;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .feat-img {
+        display: none;
+        /* align: center; */
+    }
+
+    .glass-rect {
+        margin-top: 20vh;
+        padding: 25px;
+    }
+
+    .main {
+        margin-top: 5vh;
+    }
+
+    .main-title {
+        font-size: 30px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body, .card::before {
+    background: url("https://user-images.githubusercontent.com/65378477/102312539-016c9d00-3fc3-11eb-97a4-0379d43f2a12.jpg");
+    background-position: 40%;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(206, 206, 206);
+}
+
+h1 {
+    font-size: 4vmin;
+    letter-spacing: .6vmin;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.7vmin;
+    letter-spacing: .3vmin;
+}
+
+.card {
+    position: relative;
+    width: 70vmin;
+    height: 50vmin;
+    background: rgba(255, 255, 255, 0.2);
+    border: .1vmin solid rgba(219, 219, 219, 0.1);
+    border-radius: 4vmin;
+    overflow: hidden;
+    box-shadow: 0 .5vmin 1vmin rgba(0, 0, 0, .4);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(4.5vmin);
+    margin: -5vmin;
+}
+
+.innercard {
+    position: relative;
+    width: 70vmin;
+    height: 50vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    position: absolute;
+    top: 16vmin;
+}
+
+.button {
+    position: absolute;
+    bottom: 18vmin;
+}
+
+button {
+    width: 30vmin;
+    height: 8vmin;
+    background: rgb(64, 93, 189);
+    border: none;
+    border-radius: 5vmin;
+    outline: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(92, 128, 226);
+    box-shadow: 0 0 .5vmin #fff;
+}
+
+@media (min-width: 731px) {
+
+    h1 {
+        font-size: 3vmin;
+    }
+
+    h2 {
+        font-size: 2.4vmin;
+    }
+
+    .card, .innercard {
+        width: 60vmin;
+        height: 45vmin;
+    }
+
+    .text {
+        top: 15vmin;
+    }
+
+    .button {
+        bottom: 16vmin;
+    }
+
+    button {
+        width: 25vmin;
+        height: 7vmin;
+    }
+}
